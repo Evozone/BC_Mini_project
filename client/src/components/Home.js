@@ -7,14 +7,14 @@ import { Box, Typography, Button } from '@mui/material';
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 
 // Custom components
-import RouteLayout from '../RouteLayout';
+import RouteLayout from './Wrapper';
 
 // Home page where users can upload images and view their images
 export default function Home() {
     const navigate = useNavigate();
 
     return (
-        <RouteLayout>
+        <Wrapper>
             {/* Top frosted glass Box with rounded corners */}
             {/* Top frosted glass Box with rounded corners */}
             <Box
@@ -83,6 +83,6 @@ export default function Home() {
                     </Button>
                 </Box>
             </Box>
-        </RouteLayout>
+        </Wrapper>
     )
 }

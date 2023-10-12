@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import { Box } from '@mui/material';
 
 // This component is used to create a layout for a route.
-const RouteLayout = ({ children }) => {
+const Wrapper = ({ children }) => {
     return (
         <Box
             sx={{

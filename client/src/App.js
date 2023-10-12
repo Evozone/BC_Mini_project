@@ -1,14 +1,12 @@
 // React imports
 import React, { useState, useEffect } from 'react';
-import { Routes, Route, useNavigate } from 'react-router-dom';
 
 // Material UI
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
 // Components
-import Home from './components/routes/Home';
-import ManageAccess from './components/routes/ManageAccess';
+import Home from './components/Home';
 
 function App() {
 
@@ -30,11 +28,7 @@ function App() {
 
     return (
         <ThemeProvider theme={darkTheme}>
-            {/* Routes for the blockchain project. */}
-            <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/access' element={<ManageAccess />} />
-            </Routes>
+            <Home />
         </ThemeProvider>
     );
 }
