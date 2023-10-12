@@ -1,5 +1,5 @@
 // React
-import React from 'react'
+import React from 'react';
 
 // MUI components
 import { Box } from '@mui/material';
@@ -18,9 +18,10 @@ export default function RightSide() {
                 backdropFilter: 'blur(20px)',
                 borderRadius: '0 0 10px 10px',
                 flexGrow: 1,
+                height: '78vh',
             }}
         >
             <ShareButton />
         </Box>
-    )
+    );
 }
