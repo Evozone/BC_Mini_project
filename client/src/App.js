@@ -9,9 +9,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Home from './components/Home';
 
 function App() {
-
-    const navigate = useNavigate();
-
     const localTheme = window.localStorage.getItem('dAppTheme');
 
     const [mode, setMode] = useState(localTheme ? localTheme : 'light');

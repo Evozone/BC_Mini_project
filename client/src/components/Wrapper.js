@@ -30,8 +30,8 @@ const Wrapper = ({ children }) => {
     );
 };
 
-RouteLayout.propTypes = {
+Wrapper.propTypes = {
     children: PropTypes.node.isRequired,
 };
 
-export default RouteLayout;
+export default Wrapper;

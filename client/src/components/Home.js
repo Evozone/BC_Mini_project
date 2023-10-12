@@ -1,18 +1,15 @@
 // React
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
 
 // MUI components
 import { Box, Typography, Button } from '@mui/material';
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 
 // Custom components
-import RouteLayout from './Wrapper';
+import Wrapper from './Wrapper';
 
 // Home page where users can upload images and view their images
 export default function Home() {
-    const navigate = useNavigate();
-
     return (
         <Wrapper>
             {/* Top frosted glass Box with rounded corners */}
@@ -75,9 +72,9 @@ export default function Home() {
                 >
                     <Button
                         variant="contained"
-                        onClick={() => {
-                            navigate('/access');
-                        }}
+                        onClick={
+                            () => { alert('Share') }
+                        }
                     >
                         Manage Access
                     </Button>
