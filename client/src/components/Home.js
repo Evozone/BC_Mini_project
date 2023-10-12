@@ -18,15 +18,16 @@ export default function Home() {
                 sx={{
                     m: 1,
                     p: 2,
-                    backgroundColor: 'rgba(55, 55, 55, 0.3)',
-                    backdropFilter: 'blur(10px)',
+                    backgroundColor: 'rgba(111, 111, 111, 0.3)',
+                    backdropFilter: 'blur(20px)',
                     borderRadius: '10px 10px 0 0',
                 }}
             >
-                <Typography variant="h4" gutterBottom fontFamily="Trebuchet MS, sans-serif">
+                <Typography variant="h4" gutterBottom fontFamily="Trebuchet MS, sans-serif"
+                    color="primary.main">
                     PixShare
                 </Typography>
-                <Typography variant="body1">
+                <Typography variant="body1" color="text.secondary" fontFamily="Trebuchet MS, sans-serif">
                     Discover, share, and explore images securely using blockchain and IPFS.
                 </Typography>
             </Box>
@@ -36,8 +37,8 @@ export default function Home() {
                     m: 1,
                     mt: 0,
                     p: 2,
-                    backgroundColor: 'rgba(55, 55, 55, 0.3)',
-                    backdropFilter: 'blur(10px)',
+                    backgroundColor: 'rgba(111, 111, 111, 0.3)',
+                    backdropFilter: 'blur(20px)',
                     borderRadius: '0 0 10px 10px',
                     flexGrow: 1,
                 }}

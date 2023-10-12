@@ -9,13 +9,9 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Home from './components/Home';
 
 function App() {
-    const localTheme = window.localStorage.getItem('dAppTheme');
-
-    const [mode, setMode] = useState(localTheme ? localTheme : 'light');
-
     const darkTheme = createTheme({
         palette: {
-            mode: mode,
+            mode: 'dark',
         },
 
         typography: {
